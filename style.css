@@ -1,0 +1,679 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+/* Navbar Styles */
+.navbar {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: 700;
+}
+
+.navbar-brand img {
+    margin-right: 10px;
+}
+/* Hero Section */
+.hero-section {
+  background-image: url('https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.hero-image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 100%);
+}
+
+.hero-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-section h1 {
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+  animation: fadeInDown 1s ease;
+}
+
+.hero-section p {
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+  animation: fadeIn 1.5s ease;
+}
+
+.hero-section .btn {
+  transition: all 0.3s ease;
+  animation: fadeInUp 1s ease;
+}
+
+.hero-section .btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.hero-section .btn-outline-light:hover {
+  background-color: rgba(255,255,255,0.1);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    min-height: 80vh;
+    text-align: center;
+  }
+  
+  .hero-section h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero-section .d-flex {
+    justify-content: center;
+  }
+}
+
+/* Features Section */
+.feature-icon {
+    font-size: 2.5rem;
+    color: #0d6efd;
+    margin-bottom: 1rem;
+}
+
+/* Package Cards */
+.package-card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.package-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Testimonials */
+.testimonial-card {
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    border: none;
+}
+
+/* Contact Section */
+.social-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #f8f9fa;
+    color: #333;
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    background-color: #0d6efd;
+    color: white;
+}
+
+/* Footer */
+footer a {
+    color: #adb5bd;
+}
+
+footer a:hover {
+    color: white;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero-section {
+        min-height: 60vh;
+    }
+    
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-section p.lead {
+        font-size: 1rem;
+    }
+}
+/* Booking Form Styles */
+#bookingForm {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2.5rem;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    position: relative;
+    overflow: hidden;
+}
+
+#bookingForm::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%);
+}
+
+#bookingForm h2 {
+    color: #2c3e50;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    position: relative;
+    text-align: center;
+}
+
+#bookingForm h2::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%);
+    margin: 0.5rem auto 0;
+    border-radius: 2px;
+}
+
+.form-label {
+    font-weight: 600;
+    color: #34495e;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.form-control {
+    height: 50px;
+    border: 2px solid #e0e6ed;
+    border-radius: 8px;
+    padding: 0.75rem 1.25rem;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: none;
+}
+
+.form-control:focus {
+    border-color: #4facfe;
+    box-shadow: 0 0 0 0.25rem rgba(79, 172, 254, 0.25);
+}
+
+.input-group {
+    position: relative;
+}
+
+.add-place-btn {
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 8px 8px 0 !important;
+    transition: all 0.3s ease;
+}
+
+.add-place-btn:hover {
+    background-color: #28a745;
+    transform: scale(1.05);
+}
+
+.place-input {
+    border-radius: 8px 0 0 8px !important;
+}
+
+/* Dynamic Place Inputs */
+.place-input-group {
+    margin-bottom: 0.75rem;
+    position: relative;
+}
+
+.remove-place-btn {
+    position: absolute;
+    right: -40px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #ff4757;
+    color: white;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.remove-place-btn:hover {
+    background: #ff6b81;
+    transform: translateY(-50%) scale(1.1);
+}
+
+/* Terms Checkbox */
+.form-check {
+    margin-top: 1.5rem;
+    padding-left: 1.75em;
+}
+
+.form-check-input {
+    width: 1.25em;
+    height: 1.25em;
+    margin-left: -1.75em;
+    margin-top: 0.15em;
+    border: 2px solid #e0e6ed;
+}
+
+.form-check-input:checked {
+    background-color: #4facfe;
+    border-color: #4facfe;
+}
+
+.form-check-input:focus {
+    box-shadow: 0 0 0 0.25rem rgba(79, 172, 254, 0.25);
+}
+
+.form-check-label {
+    color: #7f8c8d;
+    cursor: pointer;
+}
+
+/* Submit Button */
+.Submitbtn {
+    background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%);
+    border: none;
+    padding: 0.75rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    width: 100%;
+    margin-top: 1.5rem;
+}
+
+.Submitbtn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(79, 172, 254, 0.3);
+    background: linear-gradient(90deg, #3fa1fd 0%, #00e1f9 100%);
+}
+
+
+@media (max-width: 768px) {
+    #bookingForm {
+        padding: 1.5rem;
+        border-radius: 10px;
+    }
+    
+    .form-control {
+        height: 45px;
+        padding: 0.6rem 1rem;
+    }
+    
+    .btn-primary {
+        padding: 0.65rem 1.5rem;
+    }
+    
+    .remove-place-btn {
+        right: -35px;
+    }
+}
+
+@media (max-width: 576px) {
+    #bookingForm {
+        padding: 1.25rem;
+        box-shadow: none;
+        border: 1px solid #e0e6ed;
+    }
+    
+    .row {
+        flex-direction: column;
+    }
+    
+    .col-md-6 {
+        width: 100%;
+    }
+    
+    .col-md-6:not(:last-child) {
+        margin-bottom: 1rem;
+    }
+    
+    .remove-place-btn {
+        right: -30px;
+    }
+}
+
+/* Form Validation */
+.was-validated .form-control:valid {
+    border-color: #28a745;
+    background-image: none;
+}
+
+.was-validated .form-control:invalid {
+    border-color: #ff4757;
+}
+
+.invalid-feedback {
+    color: #ff4757;
+    font-size: 0.85rem;
+    margin-top: 0.25rem;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+#bookingForm {
+    animation: fadeIn 0.6s ease-out forwards;
+}
+
+/* Deal Cards */
+.bg-dark {
+    background-color: #1a1a1a !important;
+}
+
+/* Add Place Button */
+.add-place-btn {
+    border-radius: 0 8px 8px 0 !important;
+}
+
+/* Terms and Conditions Link */
+.form-check-label {
+    cursor: pointer;
+}
+
+/* Newsletter Form */
+.newsletter-form .form-control {
+    border-radius: 8px 0 0 8px;
+}
+
+.newsletter-form .btn {
+    border-radius: 0 8px 8px 0;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.package-card, .testimonial-card {
+    animation: fadeIn 0.5s ease forwards;
+}
+
+.package-card:nth-child(1) { animation-delay: 0.1s; }
+.package-card:nth-child(2) { animation-delay: 0.2s; }
+.package-card:nth-child(3) { animation-delay: 0.3s; }
+
+
+
+:root {
+  --primary-color: #4CAF50;
+  --primary-dark: #3e8e41;
+  --secondary-color: #f8f9fa;
+  --accent-color: #ff6b6b;
+  --text-color: #333;
+  --light-text: #6c757d;
+  --shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  --transition: all 0.3s ease;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background-color: #f5f7fa;
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+/* Modern container with max-width */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Success heading with animation */
+h1.text-success {
+  position: relative;
+  padding-bottom: 15px;
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 2rem !important;
+  animation: fadeInDown 0.8s ease;
+}
+
+h1.text-success::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: var(--primary-color);
+  border-radius: 2px;
+}
+
+/* Card styling with glassmorphism effect */
+.card {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: var(--transition);
+  animation: fadeInUp 0.8s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Success icon */
+.success-icon {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.success-icon .circle {
+  width: 100px;
+  height: 100px;
+  background-color: #e8f5e9;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  animation: scaleIn 0.5s ease;
+}
+
+.success-icon .checkmark {
+  color: var(--primary-color);
+  font-size: 4rem;
+}
+
+/* Booking details styling */
+.booking-detail {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.booking-detail:last-child {
+  border-bottom: none;
+}
+
+.detail-label {
+  font-weight: 600;
+  color: var(--light-text);
+}
+
+.detail-value {
+  font-weight: 500;
+  text-align: right;
+}
+
+/* CTA button */
+.cta-button {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.btn-success {
+  background-color: var(--primary-color);
+  border: none;
+  padding: 12px 30px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  border-radius: 50px;
+  transition: var(--transition);
+}
+
+.btn-success:hover {
+  background-color: var(--primary-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(76, 175, 80, 0.3);
+}
+
+/* Confetti effect (will be triggered by JS) */
+.confetti {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: var(--accent-color);
+  opacity: 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  h1.text-success {
+    font-size: 2rem;
+  }
+  
+  .card {
+    padding: 20px;
+  }
+  
+  .success-icon .circle {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .success-icon .checkmark {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 576px) {
+  h1.text-success {
+    font-size: 1.8rem;
+  }
+  
+  .booking-detail {
+    flex-direction: column;
+  }
+  
+  .detail-value {
+    text-align: left;
+    margin-top: 5px;
+  }
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

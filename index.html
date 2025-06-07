@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wanderlust Adventure - Travel Agency</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="https://cdn-icons-png.flaticon.com/512/3213/3213108.png" alt="Wanderlust Adventures Logo" width="30"
+          class="d-inline-block align-text-top me-2">
+        Wanderlust Adventures
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" title="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#packages">Packages</a></li>
+          <li class="nav-item"><a class="nav-link" href="#deals">Deals</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item">
+            <a class="btn btn-primary ms-lg-3" href="#bookingForm">Book Now</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+</nav>
+
+<section class="hero-section">
+  <div class="hero-image-overlay"></div>
+  <div class="container h-100">
+    <div class="row h-100 align-items-center">
+      <div class="col-lg-8 text-white">
+        <h1 class="display-3 fw-bold mb-4">Embark on Your Ultimate Adventure</h1>
+        <p class="lead mb-5">Discover hidden gems, conquer majestic peaks, and immerse yourself in cultures around the globe with our expertly crafted expeditions.</p>
+        <div class="d-flex flex-wrap gap-3">
+          <a href="#bookingForm" class="btn btn-primary btn-lg px-4 py-3">
+            <i class="fas fa-compass me-2"></i>Start Your Journey
+          </a>
+          <a href="#packages" class="btn btn-outline-light btn-lg px-4 py-3">
+            <i class="fas fa-map-marked-alt me-2"></i>Explore Tours
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section id="features" class="py-5">
+    <div class="container">
+      <div class="row g-4 text-center">
+        <div class="col-md-4">
+          <div class="feature-icon">
+            <i class="fas fa-globe-americas"></i>
+          </div>
+          <h3>100+ Destinations</h3>
+          <p class="text-muted">Explore our wide selection of destinations across all continents</p>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-icon">
+            <i class="fas fa-medal"></i>
+          </div>
+          <h3>Best Quality</h3>
+          <p class="text-muted">We partner with top-rated hotels and service providers</p>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-icon">
+            <i class="fas fa-headset"></i>
+          </div>
+          <h3>24/7 Support</h3>
+          <p class="text-muted">Our travel experts are available round the clock</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="packages" class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">Featured Tour Packages</h2>
+        <p class="text-muted">Discover our most popular destinations</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 package-card">
+            <img src="https://i.pinimg.com/736x/79/f8/a4/79f8a4910e8c38626d9d74ad256c4fd5.jpg" class="card-img-top"
+              alt="Bali Adventure">
+            <div class="card-body">
+              <div class="d-flex justify-content-between mb-2">
+                <span class="badge bg-primary">Bestseller</span>
+                <span class="text-muted"><i class="fas fa-star text-warning"></i> 4.9</span>
+              </div>
+              <h5 class="card-title">Bali Adventure</h5>
+              <p class="card-text">Explore the exotic beaches and cultural wonders of Bali with our comprehensive tour
+                package.</p>
+              <ul class="list-unstyled">
+                <li><i class="fas fa-calendar-alt me-2"></i> 7 Days / 6 Nights</li>
+                <li><i class="fas fa-map-marker-alt me-2"></i> Ubud, Kuta, Seminyak</li>
+                <li><i class="fas fa-utensils me-2"></i> Breakfast Included</li>
+              </ul>
+            </div>
+            <div class="card-footer bg-white border-0">
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <span class="h5 mb-0">$1,299</span>
+                  <small class="text-muted d-block">per person</small>
+                </div>
+                <a href="#" class="btn btn-sm btn-outline-primary">Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 package-card">
+            <img src="https://i.pinimg.com/736x/18/ef/82/18ef826fb6ec0bbc68cd8581f050ce63.jpg" class="card-img-top"
+              alt="European Explorer">
+            <div class="card-body">
+              <div class="d-flex justify-content-between mb-2">
+                <span class="badge bg-success">New</span>
+                <span class="text-muted"><i class="fas fa-star text-warning"></i> 4.8</span>
+              </div>
+              <h5 class="card-title">European Explorer</h5>
+              <p class="card-text">Experience the best of Europe with this multi-country tour covering iconic cities.
+              </p>
+              <ul class="list-unstyled">
+                <li><i class="fas fa-calendar-alt me-2"></i> 12 Days / 11 Nights</li>
+                <li><i class="fas fa-map-marker-alt me-2"></i> Paris, Rome, Barcelona</li>
+                <li><i class="fas fa-utensils me-2"></i> Half Board</li>
+              </ul>
+            </div>
+            <div class="card-footer bg-white border-0">
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <span class="h5 mb-0">$2,499</span>
+                  <small class="text-muted d-block">per person</small>
+                </div>
+                <a href="#" class="btn btn-sm btn-outline-primary">Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 package-card">
+            <img src="https://i.pinimg.com/736x/64/8d/82/648d82a315a8d312c7242abcc2e35c56.jpg" class="card-img-top"
+              alt="Japanese Wonders">
+            <div class="card-body">
+              <div class="d-flex justify-content-between mb-2">
+                <span class="badge bg-info">Limited</span>
+                <span class="text-muted"><i class="fas fa-star text-warning"></i> 5.0</span>
+              </div>
+              <h5 class="card-title">Japanese Wonders</h5>
+              <p class="card-text">Discover the perfect blend of tradition and modernity in Japan's most famous cities.
+              </p>
+              <ul class="list-unstyled">
+                <li><i class="fas fa-calendar-alt me-2"></i> 10 Days / 9 Nights</li>
+                <li><i class="fas fa-map-marker-alt me-2"></i> Tokyo, Kyoto, Osaka</li>
+                <li><i class="fas fa-utensils me-2"></i> Breakfast Included</li>
+              </ul>
+            </div>
+            <div class="card-footer bg-white border-0">
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <span class="h5 mb-0">$3,199</span>
+                  <small class="text-muted d-block">per person</small>
+                </div>
+                <a href="#" class="btn btn-sm btn-outline-primary">Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-4">
+        <a href="#" class="btn btn-outline-primary">View All Packages</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="deals" class="py-5 bg-primary text-white">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">Special Deals</h2>
+        <p>Limited time offers for your next adventure</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card bg-dark text-white">
+            <div class="row g-0">
+              <div class="col-md-5">
+                <img src="https://i.pinimg.com/736x/a5/8e/eb/a58eeb3a7440f319ed90b99ef36cc48b.jpg"
+                  class="img-fluid h-100" alt="Summer Special">
+              </div>
+              <div class="col-md-7">
+                <div class="card-body">
+                  <span class="badge bg-danger mb-2">50% OFF</span>
+                  <h5 class="card-title">Summer Special</h5>
+                  <p class="card-text">Book any tropical destination for travel in June-August and get 50% off on your
+                    second traveler.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <small class="text-warning">Offer ends May 31</small>
+                    <a href="#" class="btn btn-sm btn-primary">Grab Deal</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card bg-dark text-white">
+            <div class="row g-0">
+              <div class="col-md-5">
+                <img src="https://i.pinimg.com/736x/56/3c/b8/563cb87360b00f9478b0407f6c649766.jpg"
+                  class="img-fluid h-100" alt="Family Package">
+              </div>
+              <div class="col-md-7">
+                <div class="card-body">
+                  <span class="badge bg-success mb-2">Family Deal</span>
+                  <h5 class="card-title">Kids Go Free</h5>
+                  <p class="card-text">Children under 12 stay and eat free at participating resorts when booking our
+                    family packages.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <small class="text-warning">Limited availability</small>
+                    <a href="#" class="btn btn-sm btn-primary">Grab Deal</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials" class="py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">Traveler Testimonials</h2>
+        <p class="text-muted">Hear what our customers say about their experiences</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 testimonial-card p-4">
+            <div class="d-flex mb-3">
+              <img src="https://i.pinimg.com/736x/64/e0/dc/64e0dcb0474d8ea65ef5aa9b42de7001.jpg"
+                class="rounded-circle me-3" width="60" height="60" alt="Sarah J.">
+              <div>
+                <h5 class="mb-0">Sarah J.</h5>
+                <div class="text-warning">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <p class="mb-0">"The Bali Adventure package exceeded all my expectations. Every detail was perfectly
+              arranged, and the guides were incredibly knowledgeable."</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 testimonial-card p-4">
+            <div class="d-flex mb-3">
+              <img src="https://i.pinimg.com/736x/38/da/c4/38dac4d00f5419228ff0e84055b644f6.jpg"
+                class="rounded-circle me-3" width="60" height="60" alt="Michael T.">
+              <div>
+                <h5 class="mb-0">Michael T.</h5>
+                <div class="text-warning">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <p class="mb-0">"Our European tour was flawless. The hotels were excellent and the itinerary allowed us to
+              see so much without feeling rushed."</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 testimonial-card p-4">
+            <div class="d-flex mb-3">
+              <img src="https://i.pinimg.com/736x/61/44/eb/6144eb40107430f2b0e6961931b37217.jpg"
+                class="rounded-circle me-3" width="60" height="60" alt="Emily R.">
+              <div>
+                <h5 class="mb-0">Emily R.</h5>
+                <div class="text-warning">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+            <p class="mb-0">"The Japan tour was a dream come true. The cultural experiences were authentic and the
+              transportation between cities was seamless."</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <!-- Booking Form -->
+    <section class="container py-5">
+        <h2 class="text-center mb-4">Book Your Trip</h2>
+        <form id="bookingForm" class="needs-validation" novalidate>
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="travellerName" class="form-label">Traveller Name</label>
+                    <input type="text" class="form-control" id="travellerName" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="dateOfTravel" class="form-label">Date of Travel</label>
+                    <input type="date" class="form-control" id="dateOfTravel" required>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="pickupLocation" class="form-label">Pickup Location</label>
+                    <input type="text" class="form-control" id="pickupLocation" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="destination" class="form-label">Destination</label>
+                    <input type="text" class="form-control" id="destination" required>
+                </div>
+            </div>
+            <div id="placesContainer" class="mb-3">
+                <label class="form-label">Places to Visit</label>
+                <div class="input-group mb-2">
+                    <input type="text" class="form-control place-input" placeholder="Place 1" required>
+                    <button type="button" class="btn btn-success add-place-btn">+</button>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="numPersons" class="form-label">Number of Persons</label>
+                <input type="number" class="form-control" id="numPersons" min="1" required>
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="terms" required>
+                <label class="form-check-label" for="terms">I accept the Terms and Conditions</label>
+            </div>
+            <button type="submit" class="Submitbtn btn-primary">Submit Booking</button>
+        </form>
+    </section>
+
+  <!-- Terms Modal -->
+  <div class="modal fade" id="termsModal" tabindex="-1" aria-labelledby="termsModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="termsModalLabel">Terms and Conditions</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h6>Booking Terms</h6>
+          <p>All bookings are subject to availability. A deposit of 30% is required at the time of booking, with the
+            balance due 45 days prior to departure.</p>
+
+          <h6 class="mt-3">Cancellation Policy</h6>
+          <p>Cancellations made more than 45 days prior to departure will receive a full refund minus a $100
+            administration fee. Cancellations made between 45-30 days prior will forfeit the deposit. Cancellations
+            within 30 days are non-refundable.</p>
+
+          <h6 class="mt-3">Travel Insurance</h6>
+          <p>We strongly recommend purchasing comprehensive travel insurance to cover unforeseen circumstances including
+            medical emergencies, trip cancellations, and lost luggage.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section id="about" class="py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <img
+            src="https://images.pexels.com/photos/10294864/pexels-photo-10294864.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            class="img-fluid rounded" alt="About Us">
+        </div>
+        <div class="col-lg-6">
+          <h2 class="fw-bold mb-4">About Wanderlust Adventures</h2>
+          <p>Founded in 2010, Wanderlust Adventures has been creating unforgettable travel experiences for thousands of
+            satisfied customers. Our mission is to provide exceptional service and unique itineraries that go beyond
+            typical tourist experiences.</p>
+          <p>Our team of travel experts has personally visited every destination we offer, ensuring we can provide
+            first-hand recommendations and insights to make your trip truly special.</p>
+          <div class="d-flex align-items-center mt-4">
+            <div class="me-4 text-center">
+              <h3 class="mb-0 text-primary">12,000+</h3>
+              <p class="mb-0 text-muted">Happy Travelers</p>
+            </div>
+            <div class="me-4 text-center">
+              <h3 class="mb-0 text-primary">100+</h3>
+              <p class="mb-0 text-muted">Destinations</p>
+            </div>
+            <div class="text-center">
+              <h3 class="mb-0 text-primary">97%</h3>
+              <p class="mb-0 text-muted">Satisfaction Rate</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">Contact Us</h2>
+        <p class="text-muted">Have questions? Get in touch with our travel experts</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Contact Information</h5>
+              <ul class="list-unstyled">
+                <li class="mb-3">
+                  <i class="fas fa-map-marker-alt me-2 text-primary"></i>
+                  <strong>Address:</strong> 123 Travel Street, Adventure City, AC 12345
+                </li>
+                <li class="mb-3">
+                  <i class="fas fa-phone me-2 text-primary"></i>
+                  <strong>Phone:</strong> +1 (555) 123-4567
+                </li>
+                <li class="mb-3">
+                  <i class="fas fa-envelope me-2 text-primary"></i>
+                  <strong>Email:</strong> info@wanderlust.com
+                </li>
+                <li class="mb-3">
+                  <i class="fas fa-clock me-2 text-primary"></i>
+                  <strong>Hours:</strong> Mon-Fri 9am-7pm, Sat 10am-4pm
+                </li>
+              </ul>
+              <div class="mt-4">
+                <h6>Follow Us</h6>
+                <div class="social-icons">
+                  <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                  <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                  <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Send Us a Message</h5>
+              <form>
+                <div class="mb-3">
+                  <label for="contactName" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="contactName" required>
+                </div>
+                <div class="mb-3">
+                  <label for="contactEmail" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="contactEmail" required>
+                </div>
+                <div class="mb-3">
+                  <label for="contactSubject" class="form-label">Subject</label>
+                  <input type="text" class="form-control" id="contactSubject" required>
+                </div>
+                <div class="mb-3">
+                  <label for="contactMessage" class="form-label">Message</label>
+                  <textarea class="form-control" id="contactMessage" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <footer class="bg-dark text-white pt-5 pb-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <h5>Dream Adventures</h5>
+          <p class="text-muted">Making your travel dreams come true since 2010.</p>
+          <div class="social-icons">
+            <a href="#" class="text-white me-2" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-white me-2" title="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-white me-2" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-white me-2" title="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="col-md-2 mb-4">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Home</a></li>
+            <li><a href="#packages">Packages</a></li>
+            <li><a href="#deals">Deals</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3 mb-4">
+          <h5>Contact</h5>
+          <ul class="list-unstyled ">
+            <li><i class="fas fa-map-marker-alt me-2"></i> 123 Travel St, Adventure City</li>
+            <li><i class="fas fa-phone me-2"></i> +1 (555) 123-4567</li>
+            <li><i class="fas fa-envelope me-2"></i> info@wanderlust.com</li>
+          </ul>
+        </div>
+
+        <div class="col-md-3 mb-4">
+          <h5>Newsletter</h5>
+          <p class="">Subscribe to get travel tips and exclusive deals</p>
+          <form>
+            <div class="mb-3">
+              <input type="email" class="form-control" placeholder="Your email" required>
+            </div>
+            <button type="submit" class="btn btn-outline-light">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <hr class="my-4 bg-secondary">
+
+      <div class="row">
+        <div class="col-md-6 text-center text-md-start">
+          <p class="mb-0 text-muted">&copy; 2023 Wanderlust Adventures. All rights reserved.</p>
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <a href="#" class="text-muted me-3">Privacy Policy</a>
+          <a href="#" class="text-muted">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
