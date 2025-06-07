@@ -170,16 +170,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         // Trigger confetti effect
         createConfetti();
-    } else {
-        summaryDiv.innerHTML = `
-            <div class="alert alert-danger" role="alert">
-                No booking data found. Please start a new booking.
-            </div>
-            <div class="cta-button mt-3">
-                <button class="btn btn-primary" onclick="window.location.href='index.html'">Start New Booking</button>
-            </div>
-        `;
-    }
+    } 
 });
 
 // Confetti effect function
@@ -229,3 +220,32 @@ style.innerHTML = `
     }
 `;
 document.head.appendChild(style);
+
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const contactForm = document.getElementById('contactForm');
+  const successModal = new bootstrap.Modal(document.getElementById('successModal'));
+  
+  contactForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    // Validate form fields
+    const formData = {
+      name: document.getElementById('contactName').value,
+      email: document.getElementById('contactEmail').value,
+      subject: document.getElementById('contactSubject').value,
+      message: document.getElementById('contactMessage').value
+    };
+    
+     setTimeout(() => {      
+      successModal.show();     
+      contactForm.reset();     
+    }, 100); 
+  });  
+
+  document.getElementById('successModal').addEventListener('hidden.bs.modal', function () {
+    contactForm.scrollIntoView({ behavior: 'smooth' });
+  });
+});
